@@ -1,0 +1,70 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: #434455;
+  background-color: white;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+  min-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+    width: 320px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 0 auto;
+
+
+
+/*!________________ HEADER______________________ */
+
+
+.page-header {
+}
+.logo-header {
+}
+.img-logo-header {
+}
+.menu-btn-mob {
+}
+.svg-menu-btn {
+}
+
+/*!________________ Section WORK______________________ */
+.work {
+}
+
+.work-img {
+}
+.work-kontent {
+}
+.work-list-item {
+}
