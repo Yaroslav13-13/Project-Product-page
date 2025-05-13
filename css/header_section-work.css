@@ -198,8 +198,7 @@ a {
   width: 50px;
   height: 50px;
   display: block;
-  border: solid;
-  justify-content: center;
+  align-items: center;
   margin-bottom: 24px;
 }
 
@@ -242,3 +241,46 @@ a {
   justify-content: center;
   margin: 0 auto;
 }
+
+/*!________________ Section Management _____________________ */
+
+.management {
+  padding: 50px 0;
+}
+
+.container {
+}
+
+.img-management {
+  margin-bottom: 50px;
+}
+
+.management-content {
+}
+
+.menagement-subtitle {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #22343d;
+  margin-bottom: 12px;
+}
+
+.management-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: #22343d;
+  margin-bottom: 16px;
+}
+
+.management-text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.625;
+  color: #22343d;
+  margin-bottom: 16px;
+}
+
+/*!________________ Section Management _____________________ */
