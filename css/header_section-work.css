@@ -163,6 +163,7 @@ a {
   color: #02897a;
   display: flex;
   align-items: center;
+  gap: 8px;
 }
 
 /*!________________ Section WORK______________________ */
@@ -283,13 +284,15 @@ a {
   margin-bottom: 16px;
 }
 
-/*!________________ Section Management _____________________ */
+/*!________________ Section Customer Support _____________________ */
 
 .customer-support {
   padding: 50px 0;
 }
 
 .container-customer {
+  display: flex;
+  flex-wrap: wrap;
   width: 369px;
   padding-left: 18px;
   padding-right: 18px;
@@ -298,10 +301,14 @@ a {
 
 .img-customer {
   display: block;
+  width: 350px;
+  height: 320px;
+  margin: 0 auto;
+  margin-bottom: 50px;
 }
 
-.images-customer {
-}
+/* .images-customer {
+} */
 
 .content-customer {
   display: flex;
@@ -312,12 +319,14 @@ a {
   font-weight: 600;
   font-size: 16px;
   color: #22343d;
+  margin-bottom: 8px;
 }
 .customer-title {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 32px;
   color: #22343d;
+  margin-bottom: 16px;
 }
 .customer-text {
   font-family: "Poppins", sans-serif;
@@ -325,10 +334,17 @@ a {
   font-size: 16px;
   line-height: 1.625;
   color: #22343d;
+  margin-bottom: 16px;
 }
 .svg-list-customet {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
 }
 .customer-item {
+  display: flex;
+  /* gap: 30px; */
+  column-gap: 16px;
 }
 .customer-svg {
 }
@@ -338,4 +354,118 @@ a {
   font-size: 16px;
   line-height: 1.625;
   color: #22343d;
+  width: 287px;
+}
+
+/*!________________ Section Collaborative _____________________ */
+
+.collaborative {
+  padding: 50px 0 70px 0;
+}
+.container-collaborative {
+  display: flex;
+  flex-wrap: wrap;
+  width: 369px;
+  padding-left: 18px;
+  padding-right: 18px;
+  margin: 0 auto;
+}
+
+.img-collaborative {
+  display: block;
+  width: 350px;
+  height: 320px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.images-collaborative {
+}
+.collaborative-content {
+}
+.collaborative-subtitle {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #22343d;
+  margin-bottom: 8px;
+}
+.collaborative-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: #22343d;
+  margin-bottom: 16px;
+}
+.collaborative-text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.625;
+  color: #22343d;
+  margin-bottom: 24px;
+}
+
+/*!________________ Section Quick & Easy Process _____________________ */
+
+.process {
+  padding: 70px 0 50px 0;
+}
+
+.container-process {
+  display: flex;
+  flex-wrap: wrap;
+  width: 369px;
+  padding-left: 18px;
+  padding-right: 18px;
+  margin: 0 auto;
+}
+.process-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  color: #22343d;
+  width: 348px;
+  margin-bottom: 8px;
+}
+.process-subtitle {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 1.625;
+  text-align: center;
+  color: #22343d;
+  width: 338px;
+  margin-bottom: 40px;
+}
+.list-process {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+}
+.process-item {
+  display: flex;
+  align-items: center; /* вертикальне вирівнювання по центру */
+  width: 340px; /* як у макеті */
+  gap: 16px; /* відстань між текстом і картинкою */
+}
+.process-img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 50%; /* щоб були круглі, якщо треба */
+}
+
+.list-process li:nth-child(even) {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.process-text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  color: #2f281e;
 }
