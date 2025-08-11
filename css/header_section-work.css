@@ -29,9 +29,11 @@ h5 {
 }
 
 img {
-  display: block;
-  min-width: 100%;
+  max-width: 100%;
   height: auto;
+  display: block;
+  object-fit: cover;
+  border-style: none;
 }
 
 button {
@@ -275,6 +277,24 @@ a {
   outline-offset: 2px;
 }
 
+.work-link-play {
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.work-link-play:hover,
+.work-link-play:focus {
+  background-color: #03b79a;
+  box-shadow: 0 4px 10px rgba(3, 183, 154, 0.5);
+  outline: none;
+  transform: scale(1.02);
+  color: white;
+}
+
+.work-link-play:focus-visible {
+  outline: 2px solid #03b79a;
+  outline-offset: 2px;
+}
+
 /*!________________ Section Management _____________________ */
 
 .management {
@@ -443,7 +463,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   max-width: 100%;
-  width: 100%;
+  max-width: 375px;
   padding-left: 18px;
   padding-right: 18px;
   margin: 0 auto;
@@ -561,3 +581,63 @@ a {
 }
 
 /*!________________ Section Contents Strategies _____________________ */
+
+.container-strategies {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+.strategies-title {
+  font-weight: 700;
+  font-size: 34px;
+  color: #22343d;
+  margin-bottom: 8px;
+}
+.strategies-text-title {
+  margin-bottom: 40px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  text-align: center;
+  color: #22343d;
+}
+.strategies-list {
+}
+.strategies-item {
+}
+.strategies-img {
+  width: 348px;
+  height: 185px;
+  margin-bottom: 24px;
+}
+
+.strategies-text-img {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #22343d;
+  margin-bottom: 12px;
+}
+
+.strategies-span-img {
+  font-weight: 700;
+}
+
+.strategies-subtitle {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.66667;
+  color: #22343d;
+  margin-bottom: 56px;
+}
+.strategies-text-span {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.66667;
+  color: #02897a;
+}
