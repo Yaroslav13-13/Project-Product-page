@@ -1,9 +1,11 @@
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #434455;
   background-color: white;
 }
@@ -152,6 +154,21 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.work-link:hover,
+.work-linkn:focus {
+  background-color: #03b79a;
+  box-shadow: 0 4px 10px rgba(3, 183, 154, 0.5);
+  outline: none;
+  transform: scale(1.02);
+}
+
+.work-link:focus-visible {
+  outline: 2px solid #03b79a;
+  outline-offset: 2px;
 }
 
 .work-link-play {
@@ -241,6 +258,21 @@ a {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.built-link-btn:hover,
+.built-link-btn:focus {
+  background-color: #03b79a;
+  box-shadow: 0 4px 10px rgba(3, 183, 154, 0.5);
+  outline: none;
+  transform: scale(1.02);
+}
+
+.built-link-btn:focus-visible {
+  outline: 2px solid #03b79a;
+  outline-offset: 2px;
 }
 
 /*!________________ Section Management _____________________ */
@@ -307,9 +339,6 @@ a {
   margin-bottom: 50px;
 }
 
-/* .images-customer {
-} */
-
 .content-customer {
   display: flex;
   flex-direction: column;
@@ -343,7 +372,6 @@ a {
 }
 .customer-item {
   display: flex;
-  /* gap: 30px; */
   column-gap: 16px;
 }
 .customer-svg {
@@ -414,11 +442,16 @@ a {
 .container-process {
   display: flex;
   flex-wrap: wrap;
-  width: 369px;
+  max-width: 100%;
+  width: 100%;
   padding-left: 18px;
   padding-right: 18px;
   margin: 0 auto;
+  gap: 32px;
+  justify-content: center;
+  align-items: center;
 }
+
 .process-title {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -428,6 +461,7 @@ a {
   width: 348px;
   margin-bottom: 8px;
 }
+
 .process-subtitle {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
@@ -438,28 +472,41 @@ a {
   width: 338px;
   margin-bottom: 40px;
 }
+
 .list-process {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   gap: 32px;
   justify-content: center;
+  max-width: 750px;
+  margin: 0 auto;
 }
+
 .process-item {
   display: flex;
-  align-items: center; /* вертикальне вирівнювання по центру */
-  width: 340px; /* як у макеті */
-  gap: 16px; /* відстань між текстом і картинкою */
+  align-items: center;
+  width: 100%;
+  max-width: 340px;
+  gap: 16px;
+  box-sizing: border-box;
 }
+
+.process-image-wrapper {
+  /* position: relative; */
+  /* flex-shrink: 0; */
+}
+
 .process-img {
   width: 90px;
   height: 90px;
-  object-fit: cover;
-  border-radius: 50%; /* щоб були круглі, якщо треба */
+  /* object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid; */
 }
 
-.list-process li:nth-child(even) {
-  flex-direction: row-reverse;
-  text-align: right;
+.process-text-wrapper {
+  flex: 1;
 }
 
 .process-text {
@@ -468,4 +515,49 @@ a {
   font-size: 16px;
   text-align: center;
   color: #2f281e;
+  background-color: white;
+  padding: 12px 20px;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 0;
+  display: inline-block;
 }
+
+.process-btn {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+
+  border-radius: 4px;
+  width: 216px;
+  height: 53px;
+  background: #02897a;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+.process-btn:hover,
+.process-btn:focus {
+  background-color: #03b79a;
+  box-shadow: 0 4px 10px rgba(3, 183, 154, 0.5);
+  outline: none;
+  transform: scale(1.02);
+}
+
+.process-btn:focus-visible {
+  outline: 2px solid #03b79a;
+  outline-offset: 2px;
+}
+
+/*!________________ Section Contents Strategies _____________________ */
