@@ -225,6 +225,17 @@ a {
 .svg-icon-built {
 }
 
+.link-item-built {
+  display: inline-block;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.link-item-built:hover,
+.link-item-built:focus {
+  transform: scale(1.1);
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.2));
+}
+
 .title-item-built {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
