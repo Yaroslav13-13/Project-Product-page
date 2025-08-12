@@ -1140,7 +1140,6 @@ a {
 .footer-list {
   display: flex;
   flex-direction: column;
-  gap: 8px;
   margin-bottom: 32px;
   align-items: center;
 }
@@ -1153,14 +1152,67 @@ a {
   justify-content: center;
 }
 .footer-subscribe {
+  display: flex;
+  flex-direction: column;
 }
 .footer-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  color: #22343d;
+  margin-bottom: 34px;
 }
 .subscribe-form {
 }
 .subscribe-input {
+  width: 325px;
+  height: 48px;
+  font-family: "ProximaNova", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #bcd0e5;
+  margin-bottom: 21px;
+  padding: 10px 15px;
 }
 .subscribe-btn {
+  margin: 0 auto;
+  width: 131px;
+  height: 39px;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  background-color: #02897a;
+  display: block;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 44px;
 }
+
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+  background-color: #03b79a;
+  box-shadow: 0 4px 10px rgba(3, 183, 154, 0.5);
+  outline: none;
+  transform: scale(1.02);
+  color: #fff;
+}
+
+.subscribe-btn:focus-visible {
+  outline: 2px solid #03b79a;
+  outline-offset: 2px;
+}
+
 .footer-copy {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.875;
+  text-align: center;
+  color: #22343d;
 }
