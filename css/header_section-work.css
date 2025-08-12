@@ -761,7 +761,6 @@ a {
   font-size: 76px;
   line-height: 1.31579;
   letter-spacing: 0em;
-
   justify-content: start;
   color: #02897a;
   line-height: 0.7;
@@ -830,6 +829,7 @@ a {
   width: 100%;
   margin-bottom: 32px;
 }
+
 .pricing-title-card-gree {
   font-weight: 700;
   font-size: 24px;
@@ -837,6 +837,7 @@ a {
   color: #fff;
   margin-bottom: 8px;
 }
+
 .pricing-description-gree {
   font-weight: 400;
   font-size: 16px;
@@ -844,6 +845,7 @@ a {
   color: #fff;
   margin-bottom: 16px;
 }
+
 .pricing-amount-gree {
   position: relative;
   margin-bottom: 30px;
@@ -866,6 +868,7 @@ a {
   line-height: 0.7;
   margin-bottom: 0;
 }
+
 .side-green {
   display: flex;
   flex-direction: column;
@@ -873,6 +876,7 @@ a {
   justify-content: flex-end;
   margin-bottom: 0;
 }
+
 .currency-green {
   font-family: "Inter", sans-serif;
   font-weight: 700;
@@ -887,6 +891,7 @@ a {
   width: 16px;
   height: 29px;
 }
+
 .period-green {
   font-weight: 400;
   font-size: 16px;
@@ -897,6 +902,7 @@ a {
   margin-bottom: 0px;
   color: #e0e0e0;
 }
+
 .pricing-features-green {
   display: flex;
   flex-wrap: wrap;
@@ -910,6 +916,7 @@ a {
   gap: 16px;
   margin-bottom: 38px;
 }
+
 .pricing-button-green {
   background: #fff;
   color: #02897a;
@@ -934,4 +941,100 @@ a {
 .pricing-button-green:focus-visible {
   outline: 2px solid #03b79a;
   outline-offset: 2px;
+}
+
+/*! ____________ Section What Clients Say _____________ */
+
+.container-clients-say {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+.clients-say-title {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 1.67647;
+  letter-spacing: 0.01em;
+  color: #22343d;
+  margin-bottom: 8px;
+}
+.clients-say-subtitle {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.75;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #22343d;
+  margin-bottom: 32px;
+}
+
+.rating-svg-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.clients-card-wrapper {
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  padding: 30px 35px;
+  width: 327px;
+  height: auto;
+}
+
+.svg-star {
+  margin-bottom: 16px;
+}
+.text-svg-star {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.75;
+  letter-spacing: 0.01em;
+  color: #32454f;
+  max-width: 275px;
+  margin-bottom: 16px;
+}
+
+.clients-amount {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.foto-img {
+  width: 50px;
+  height: 50px;
+  margin-right: 14px;
+}
+
+.foto-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 0;
+}
+
+.foto-name {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  color: #02897a;
+}
+
+.foto-profession {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.71429;
+  letter-spacing: 0.01em;
+  color: #252b42;
 }
