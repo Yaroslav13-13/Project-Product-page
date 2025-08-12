@@ -671,7 +671,6 @@ a {
 
 .pricing-section {
   padding: 50px 0;
-  background-color: #f5f5f5;
 }
 
 .pricing-container {
@@ -698,26 +697,29 @@ a {
 }
 
 .pricing-card {
-  background: white;
-  border-radius: 12px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
+  background: #fff;
+  border-radius: 8px;
   padding: 40px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   text-align: center;
-  max-width: 350px;
+  max-width: 332px;
   width: 100%;
+  margin-bottom: 32px;
 }
 
 .pricing-title-card {
-  font-size: 28px;
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.66667;
+  color: #22343d;
 }
 
 .pricing-description {
+  font-weight: 400;
   font-size: 16px;
-  color: #666;
-  margin-bottom: 30px;
+  line-height: 2.5;
+  color: #22343d;
+  margin-bottom: 16px;
 }
 
 .pricing-amount {
@@ -726,14 +728,8 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  align-items: flex-start;
   flex-wrap: wrap;
-  gap: 4px;
-}
-
-.pricing-amount {
-  display: flex;
-  align-items: flex-start; /* вирівнює по верхньому краю */
-  justify-content: center;
   gap: 8px;
 }
 
@@ -765,7 +761,7 @@ a {
   font-size: 76px;
   line-height: 1.31579;
   letter-spacing: 0em;
-  text-align: ;
+
   justify-content: start;
   color: #02897a;
   line-height: 0.7;
@@ -784,16 +780,17 @@ a {
 }
 
 .pricing-features {
-  text-align: left;
-  margin-bottom: 30px;
-  padding-left: 20px;
-}
-
-.pricing-features {
-  color: #333;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
   font-size: 16px;
-  margin-bottom: 12px;
-  position: relative;
+  line-height: 1.375;
+  letter-spacing: 0.01em;
+  color: #22343d;
+  gap: 16px;
+  margin-bottom: 38px;
 }
 
 .pricing-button {
@@ -817,6 +814,124 @@ a {
 }
 
 .pricing-button:focus-visible {
+  outline: 2px solid #03b79a;
+  outline-offset: 2px;
+}
+
+/** ============   green card  =============  */
+
+.pricing-card-gree {
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
+  background: #02897a;
+  border-radius: 8px;
+  padding: 40px;
+  text-align: center;
+  max-width: 332px;
+  width: 100%;
+  margin-bottom: 32px;
+}
+.pricing-title-card-gree {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.66667;
+  color: #fff;
+  margin-bottom: 8px;
+}
+.pricing-description-gree {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 2.5;
+  color: #fff;
+  margin-bottom: 16px;
+}
+.pricing-amount-gree {
+  position: relative;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.price-green {
+  font-weight: 700;
+  font-size: 76px;
+  line-height: 1.31579;
+  letter-spacing: 0em;
+
+  justify-content: start;
+  color: #fff;
+  line-height: 0.7;
+  margin-bottom: 0;
+}
+.side-green {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 0;
+}
+.currency-green {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.25;
+  letter-spacing: 0em;
+  color: #fff;
+  align-self: flex-start;
+  margin-top: 8px;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 29px;
+}
+.period-green {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.1875;
+  letter-spacing: 0.01em;
+  align-self: flex-end;
+  justify-content: start;
+  margin-bottom: 0px;
+  color: #e0e0e0;
+}
+.pricing-features-green {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.375;
+  letter-spacing: 0.01em;
+  color: #fff;
+  gap: 16px;
+  margin-bottom: 38px;
+}
+.pricing-button-green {
+  background: #fff;
+  color: #02897a;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-button-green:hover,
+.pricing-button-green:focus {
+  background-color: #03b79a;
+  box-shadow: 0 4px 10px rgba(3, 183, 154, 0.5);
+  outline: none;
+  transform: scale(1.02);
+  color: #fff;
+}
+
+.pricing-button-green:focus-visible {
   outline: 2px solid #03b79a;
   outline-offset: 2px;
 }
