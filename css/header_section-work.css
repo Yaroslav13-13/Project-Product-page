@@ -1085,3 +1085,82 @@ a {
   outline: 2px solid #03b79a;
   outline-offset: 2px;
 }
+
+/*! ____________ Section Footer _____________ */
+
+.page-footer {
+  padding: 43px 0;
+}
+.footer-container {
+}
+
+.logo-footer {
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 16px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.social-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+}
+.social-link {
+}
+.social-icon {
+}
+.footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 8px;
+}
+.footer-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #22343d;
+}
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 32px;
+  align-items: center;
+}
+.footer-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 2.1875;
+  text-align: center;
+  color: #22343d;
+  justify-content: center;
+}
+.footer-subscribe {
+}
+.footer-subtitle {
+}
+.subscribe-form {
+}
+.subscribe-input {
+}
+.subscribe-btn {
+}
+.footer-copy {
+}
