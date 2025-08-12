@@ -945,6 +945,10 @@ a {
 
 /*! ____________ Section What Clients Say _____________ */
 
+.clients-say {
+  padding: 50px 0;
+}
+
 .container-clients-say {
   max-width: 1200px;
   margin: 0 auto;
@@ -1037,4 +1041,47 @@ a {
   line-height: 1.71429;
   letter-spacing: 0.01em;
   color: #252b42;
+}
+
+.product-container {
+  border-radius: 32px;
+  width: 371px;
+  background: #02897a;
+}
+.product-title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.6;
+  text-align: center;
+  color: #fff;
+  padding: 22px 0;
+}
+.product-btn {
+  display: block;
+  border-radius: 8px;
+  width: 150px;
+  height: 50px;
+  background: #fff;
+  margin: 0 auto;
+  margin-bottom: 32px;
+
+  font-weight: 600;
+  font-size: 20px;
+  color: #02897a;
+  border: none;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-btn:hover,
+.product-btn:focus {
+  background-color: #03b79a;
+  box-shadow: 0 4px 10px rgba(3, 183, 154, 0.5);
+  outline: none;
+  transform: scale(1.02);
+  color: #fff;
+}
+
+.product-btn:focus-visible {
+  outline: 2px solid #03b79a;
+  outline-offset: 2px;
 }
