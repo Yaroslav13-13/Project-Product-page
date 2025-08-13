@@ -6,10 +6,11 @@
     <title>Product page</title>
     <link rel="icon" href="./images/Group 190.svg" type="image/x-icon" />
     <link rel="stylesheet" href="./css/header_section-work.css" />
+    <script type="module" src="./script.js" defer></script>
   </head>
 
   <body>
-    <header class="page-header">
+    <header class="page-header" id="home">
       <div class="container">
         <div class="header-container">
           <a class="logo-header" href="">
@@ -30,10 +31,27 @@
         </div>
       </div>
     </header>
+    <!--!================= mob menu ===================-->
 
+    <div class="modal-menu" id="modalMenu">
+      <div class="modal-content">
+        <button class="close-modal" id="closeModal">&times;</button>
+        <nav class="modal-nav">
+          <a href="#home">Home</a>
+          <a href="#work">Work</a>
+          <a href="#management">Management</a>
+          <a href="#support">Customer Support</a>
+          <a href="#process">Quick & Easy Process</a>
+          <a href="#contents">Contents Strategies</a>
+          <a href="#price">Price Table</a>
+          <a href="#clients">What Clients Say</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </div>
     <!--!____________ Section WORK _____________-->
 
-    <section class="work">
+    <section class="work" id="work">
       <div class="container">
         <div class="work-img">
           <img
@@ -121,7 +139,7 @@
     </section>
 
     <!--!____________ Section Management _____________-->
-    <section class="management">
+    <section class="management" id="management">
       <div class="container">
         <div class="img-management">
           <img src="./images/management.avif" alt="documents with folders" />
@@ -155,7 +173,7 @@
 
     <!--!____________ Section Customer Support _____________-->
 
-    <section class="customer-support">
+    <section class="customer-support" id="support">
       <div class="container container-customer">
         <div class="img-customer">
           <img
@@ -251,7 +269,7 @@
 
     <!--!____________ Section Quick & Easy Process _____________-->
 
-    <section class="process">
+    <section class="process" id="process">
       <div class="container container-process">
         <h2 class="process-title">Quick & Easy Process</h2>
         <h3 class="process-subtitle">
@@ -314,7 +332,7 @@
 
     <!--!____________ Section Contents Strategies _____________-->
 
-    <section class="collaborative">
+    <section class="collaborative" id="contents">
       <dvi class="container container-collaborative">
         <h2 class="strategies-title">Contents Strategies</h2>
         <p class="strategies-text-title">
@@ -358,7 +376,7 @@
 
     <!--!____________ Section Price Table _____________-->
 
-    <section class="pricing-section">
+    <section class="pricing-section" id="price">
       <div class="container pricing-container">
         <h2 class="price-title">Price Table</h2>
         <h3 class="price-subtitle">We offer competitive price</h3>
@@ -420,7 +438,7 @@
 
     <!--!____________ Section What Clients Say _____________-->
 
-    <section class="clients-say">
+    <section class="clients-say" id="clients">
       <div class="container container-clients-say">
         <h2 class="clients-say-title">What Clients Say</h2>
         <h3 class="clients-say-subtitle">
@@ -517,7 +535,7 @@
       </div>
     </secttion>
 
-    <footer class="page-footer">
+    <footer class="page-footer" id="contact">
       <div class="container footer-container">
         <!-- Лого -->
         <a class="logo-header logo-footer" href="#">
